@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+}
+.navbar-brand {
+  text-decoration: underline;
+}
+nav {
+  background-color: black;
+}
+.black {
+  background-color: rgba(0, 0, 0, 0.734);
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+}
+.jumbotron {
+  background-image: url(esra-afsar-lkbfgAvzlAc-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.gallery {
+  background-image: url(devin-avery-9h5GDO6me70-unsplash.jpg);
+}
+.row .img img {
+  height: 347px;
+  width: 100%;
+}
+.col-lg-3 img {
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .glrey .img {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .glrey .img {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .glrey .img {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #ser2
+  {
+    font-size: 158%;
+  }
+}
+@media screen and (max-width: 992px) {
+.glrey .row .img img
+{
+height: 307px;
+}
+}
+
+
+@media screen and (max-width: 768px) {
+.glrey .row .img 
+{
+  margin: auto;
+height: 307px;
+width: 70%;
+margin-top: 30px;
+}
+}
+#about {
+  background-image: url(nick-hillier-m6cRdOBdWWo-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#visit {
+  background-image: url(insung-yoon-bXfvPcBQyGc-unsplash.jpg);
+
+  color: #dddddd;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#coffee{
+  background-image: url(nick-hillier-m6cRdOBdWWo-unsplash.jpg);
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+#offers
+{
+background-image: url(nordwood-themes-ivP3TYdLvw0-unsplash.jpg);
+width: 100%;
+background-size:cover;
+background-repeat: no-repeat;
+
+}
+#offers::after
+{
+  content:"";
+  clear: both;
+  display: block;
+}
+#ser1
+{
+  
+ width:70%;
+
+ background-color:transparent;
+ height:100%;
+
+}
+.kafe-price
+{
+  margin-left: 42px;
+}
+nav ul li:hover
+{
+  background-color: rgba(255, 170, 90, 0.634);
+  border-radius: 6%;
+  color: black;
+}

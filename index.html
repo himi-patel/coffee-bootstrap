@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="beanbuzz.css" />
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- start nav------------------------------- -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">BeanBuzz</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#" onclick="scrollto('home')"
+             ">Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="scrollto('gallery')"">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="scrollto('conatct')"">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="scrollto('about')"">About</a>
+          </li>
+          <li>
+          <a class="nav-link" href="#" onclick="scrollto('offers')"">Offers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="scrollto('news')"">News</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Your orders</a>
+              <a class="dropdown-item" href="#">Add to cart</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Home Delivery</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <!-- end nav------------- -->
+
+    <!-- header----------------- -->
+    <div class="jumbotron text-light p-20">
+      <div class="black">
+        <h1 class="display-4 text-center font-weight-light">
+          Enjoy Your Morning Coffee.
+        </h1>
+
+        <hr class="my-4" style="background-color: rgb(221, 216, 211)" />
+        <p class="mt-20 lead text-center font-weight-bold">
+          Boosted metabolism: Coffee has been shown to increase metabolic rate,
+          which can help with weight management.
+        </p>
+
+        <button
+          type="button"
+          class="mx-auto btn btn-secondary btn-lg btn-block"
+          style="width: 50%; margin-top: 40px"
+        >
+          Get Your Coffee Now</button
+        ><br /><br />
+        <button
+          type="button"
+          class="mx-auto btn btn-outline-dark btn-lg btn-block"
+          style="width: 50%; margin-top: -10px"
+        >
+          Click here
+        </button>
+      </div>
+    </div>
+
+    <!-- end header----------------- -->
+
+    <!-- start herald------------ -->
+    <h1 class="text-center mt-5" id="home">THE COFFEE HERALD</h1>
+    <div class="imgglry mx-auto text-center">
+      <img src="title-separator.png" alt="" />
+    </div>
+    <h6 class="text-center mt-5">
+      Caffeine has been shown to improve physical performance by increasing
+      endurance and reducing fatigue.
+    </h6>
+
+    <div class="mt-5 container">
+      <div class="card-deck mb-5">
+        <div class="card">
+          <img
+            src="nathan-dumlao-2z3MOB3kfJU-unsplash.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Latte technique</h5>
+            <p class="card-text">
+              Latte art is a method of preparing coffee created by pouring
+              microfoam into a shot of espresso and resulting in a pattern or
+              design on the surface of the latte. It can also be created or
+              embellished by simply "drawing" in the top layer of foam.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="nathan-dumlao-4QaNg9pu3nk-unsplash (1).jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Lattes with professional serving</h5>
+            <p class="card-text">
+              Lattes coffees have become increasingly popular as people try to
+              create the coffee shop experience at home.In fact, there are tons
+              of different latte flavors around the world.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="nathan-dumlao-71u2fOofI-U-unsplash.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">TURKISH IBRIK</h5>
+            <p class="card-text">
+              Ibrik or cezve is the name of the pot with a long handle for
+              brewing Turkish coffee. In Russia it's called turka. The pot is
+              usually made of copper, but can be made of stainless steel,
+              ceramics or even silver.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end herald------------- -->
+
+    <!-- gallery------------- -->
+    <div class="gallery mt-8 " id="gallery">
+      <div class="black pt-3 p-0 pb-5">
+        <h1 class="text-center mt-7 text-light">OUR SWEET GALLERY</h1>
+        <div class="imgglry mx-auto text-center">
+          <img src="title-separator.png" alt="" />
+        </div>
+
+        <div class="container-fluid">
+          <h6
+            style="
+              text-align: center;
+              margin-top: 30px;
+              color: #fcfcfc;
+              padding-bottom: 30px;
+            "
+          >
+            Some studies have suggested that coffee consumption may be linked to
+            a lower risk of depression and improved mood.
+          </h6>
+          <div class="glrey">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="img border border-light">
+                  <img src="port-1-gallery-1.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="img">
+                  <img src="port-1-img-2.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="img">
+                  <img src="port-1-img-3.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="img">
+                  <img src="alex-padurariu-uO622Nkg98k-unsplash.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="img">
+                  <img src="port-1-img-5.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="img">
+                  <img src="port-1-img-6.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="img">
+                  <img src="port-1-img-4.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="img">
+                  <img src="port-1-img-8.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end gallery---------- -->
+
+    <!-- start contact----- --> 
+
+
+    
+
+      <h1 class="text-center mt-5" id="conatct">Contact Us</h1>
+      <div class="imgglry" style="margin: auto;text-align: center;">
+        <img src="title-separator.png" alt=""></div>
+        
+        <div class="container">
+          <div class="form " style="margin-top: 40px;">
+          <form>
+            
+              <div class="form-group " >
+                <label for="formGroupExampleInput">First Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="First Name">
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput2">Last Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Last Name">
+              </div>
+          
+            
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputPassword4">Password</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              </div>
+              <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCity">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputState">State</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="inputZip">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Check me out
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            
+          </form>
+        </div>
+        </div>
+      
+     <!-- end contact----- -->
+
+
+
+     <!-- start About---- -->
+
+
+
+     <div class="container-fluid mt-5" id="about" >
+      <div class="abt" style="background-color: #262626a7;">
+    <h1 style="line-height:3;" class="text-center  text-light">About Us</h1>
+    <div class="imgglry mx-auto text-center" >
+      <img src="title-separator.png" alt="">
+  </div>
+      <p style="color: rgb(215, 215, 215);" class="text-center">A location that is easily accessible and visible to your target customers can make a big difference in the success of your coffee shop.Create a welcoming atmosphere: Customers should feel comfortable and relaxed in your coffee shop. Consider the decor, seating arrangements, and lighting to create a warm and inviting environment.</p>
+      <div class="abouts text-center mt-3" style="width: 50%;margin: auto;color:rgb(141, 114, 66);letter-spacing: 1.2px;">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+
+nostrud exercitation ullamco laboris.”
+<h1 style="color: #fcfcfc;" class="mt-2 text-center">STORES</h1>
+<p style="color:rgb(234, 163, 40);letter-spacing: 2.5px;padding: 0px 50px;" class="text-center mt-3"> Dunsmuir Ave, Los Angeles, CA 90036, USA<br>
+
+  Atkins Ave, Brooklyn, NY 11208, USA</p>
+
+<h5 class="eltdf-widget-title text-center mt-5" style="color: #fcfcfc;font-size:30px;" >News As Fresh As Our Coffee</h5>
+<form>
+  <div class="form-group mb-0">
+    <input type="email"  style="height: 64px;background: transparent;"class="form-control mt-2 mb-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email Address..">
+    <small id="emailHelp" class="form-text pb-4 " style="color:rgb(152, 152, 105);">We'll never share your email with anyone else.</small>
+  </div>
+ 
+</form>
+</div>
+</div>
+</div>
+
+<!-- part-2------------------- -->
+<div class="container-fluid m-0 p-0 pb-5"  id="offers">
+  <div class="container mx-auto pb-9"  id="ser1">
+      <h1 id="ser2" style="text-align: center;line-height:3;color: rgb(3, 9, 12);padding-top: 30px;">
+        We are proud to offer our exclusive coffees</h1>
+      
+      <div class="imgglry" style="margin: auto;text-align: center;">
+        <img src="title-separator.png" alt="">
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+    <div class="kafe-price" >
+      <h3 class="item-heading">Coffe Latte</h3> <p>Espresso and Light Layer of Crema</p>
+      <span class="price-value">$2.90</span>
+      </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+      <div class="kafe-price">
+        <h3 class="item-heading">Coffe Americano</h3> <p>Espresso and Light Layer of Crema</p>
+        <span class="price-value">$2.90</span>
+        </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+        <div class="kafe-price">
+          <h3 class="item-heading">Macchiato</h3> <p>Espresso and Light Layer of Crema</p>
+          <span class="price-value">$2.90</span>
+          </div>
+          </div>
+          <div class="col-lg-4 col-md-6 ">
+            <div class="kafe-price" style="margin-left:43px;">
+            <h3 class="item-heading">Coffe Mocha</h3> <p>Espresso and Light Layer of Crema</p>
+            <span class="price-value">$3.90</span>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+            <div class="kafe-price">
+              <h3 class="item-heading">Cappuccino</h3> <p>Espresso and Light Layer of Crema</p>
+              <span class="price-value">$3.90</span>
+              </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+              <div class="kafe-price">
+                <h3 class="item-heading">Iced Coffe</h3> <p>Espresso and Light Layer of Crema</p>
+                <span class="price-value">$3.90</span>
+                </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                <div class="kafe-price"style="margin-left:43px;">
+                  <h3 class="item-heading" >Chocolate Mocha</h3> <p>Espresso and Light Layer of Crema</p>
+                  <span class="price-value">$4.90</span>
+                  </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                  <div class="kafe-price">
+                    <h3 class="item-heading">Vanilla Latte</h3> <p>Espresso and Light Layer of Crema</p>
+                    <span class="price-value">$4.90</span>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                    <div class="kafe-price">
+                      <h3 class="item-heading">Iced Latte</h3> <p>Espresso and Light Layer of Crema</p>
+                      <span class="price-value">$4.90</span>
+                      </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                      <div class="kafe-price" style="margin-left:43px;">
+                        <h3 class="item-heading">Espresso</h3> <p>Espresso and Light Layer of Crema</p>
+                        <span class="price-value">$3.90</span>
+                        </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                        <div class="kafe-price">
+                          <h3 class="item-heading">Caramel Latte</h3> <p>Espresso and Light Layer of Crema</p>
+                          <span class="price-value">$3.90</span>
+                          </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                          <div class="kafe-price">
+                            <h3 class="item-heading">Cortado</h3> <p>Espresso and Light Layer of Crema</p>
+                            <span class="price-value">$3.90</span>
+                            </div>
+                            </div>
+                            </div>
+    </div>
+  
+  </div>
+
+     <!-- end About--------- -->
+
+
+
+     <!-- start visit-------- -->
+
+     <div class="container-fluid p-0 text-center mt-0" id="news">
+  
+      <div class="jumbotron mt-0 p-33 " id="visit" >
+        <h1 class="display-4" style="margin-top: 20px;">Visit our latest news & insights</h1>
+        <div class="imgglry mx-auto text-center mb-2" >
+          <img src="title-separator.png" alt="">
+      </div>
+        <p class="lead">We provide essential only news and resources for specialty coffee professionals.</p>
+        <hr class="my-4">
+        <p>Get notified about updates and be the first to get early access to new episodes.</p>
+        <a class="btn btn-primary btn-lg mb-4" href="#" role="button" >Learn more</a>
+    
+      </div>
+      </div>
+
+
+
+      <div class="container">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">US Barista Champion Morgan Eckroth: The Sprudge Interview:<span class="text-muted">It’ll blow your mind.</span></h2>
+          <p class="lead1">As a barista-turned-coffee writer, I’ve seen dozens of gadgets enter the market, promising to improve your home brewing game, help anyone make coffee as good as their barista, and crack the code on unlocking that exceptional cup of joe. It can be dizzying to try to keep up.</p>
+        </div>
+        <div class="col-md-5">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" style="background-image: url(fernando-hernandez-ayxNWdATtk0-unsplash.jpg);  background-size: cover;
+          background-repeat: no-repeat;
+        "><title>Placeholder</title></svg>
+    
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">7 Portable Coffee Gadgets For Brewing Barista-Level Coffee <span class="text-muted">Anywhere On Earth </span></h2>
+          <p class="lead" >Coffee is a complex drink, and it’s easy to see why folks gravitate towards the newest and latest tools. But brewing great coffee is about nailing the basics: good water, high-quality beans and a well-made burr grinder. And there’s no better, more cost-effective, and durable home grinder than the Baratza Encore.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <svg  id="coffee"class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></svg>
+    
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Studies Show Excellent Heart Health News for Coffee Drinkers.<span class="text-muted">Just Do it Once!</span></h2>
+          <p class="lead">As I’ve gotten more into coffee, I’ve upgraded my setup with two grinders also made by Baratza. But the Encore remains my go-to gift for my friends and loved ones because it gives them a peek into my world and provides them the tools to do what I do. In this article, we’ve talked about how the Encore is the perfect gift for a coffee lover, but it’s also the perfect gift to help someone learn and love coffee alongside you.</p>
+        </div>
+        <div class="col-md-5">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"style="background-image: url(ceyda-ciftci-LAiU-8OYahI-unsplash.jpg);  background-size: cover;
+          background-repeat: no-repeat;
+        ">><title>Placeholder</title></svg>
+    
+        </div>
+      </div>
+    </div>
+  <!-- end visit-------- -->
+
+
+  <!-- start footer-------- -->
+    
+    <div class="container-fluid " style="margin-top:20px;background-color: black;">
+      <footer class="container py-5">
+        <div class="row">
+          <div class="col-12 col-md">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24" focusable="false" style="color: antiquewhite;"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
+            <small class="d-block mb-3 text-muted" >© 2022-2023</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5 style="color: antiquewhite;font-size:29px;">Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Cool stuff</a></li>
+              <li><a class="text-muted" href="#">Random feature</a></li>
+              <li><a class="text-muted" href="#">Team feature</a></li>
+              <li><a class="text-muted" href="#">Stuff for developers</a></li>
+              <li><a class="text-muted" href="#">Another one</a></li>
+              <li><a class="text-muted" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5 style="color: antiquewhite;font-size:29px;">Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Resource</a></li>
+              <li><a class="text-muted" href="#">Resource name</a></li>
+              <li><a class="text-muted" href="#">Another resource</a></li>
+              <li><a class="text-muted" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5 style="color: antiquewhite;font-size:29px;">Develop</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Business</a></li>
+              <li><a class="text-muted" href="#">Education</a></li>
+              <li><a class="text-muted" href="#">Government</a></li>
+              <li><a class="text-muted" href="#">Gaming</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5 style="color: antiquewhite;font-size:29px;">About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Team</a></li>
+              <li><a class="text-muted" href="#">Locations</a></li>
+              <li><a class="text-muted" href="#">Privacy</a></li>
+              <li><a class="text-muted" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+     <!-- end footer------ -->
+    
+
+   <script>
+    function scrollto(div) 
+    {
+      $('html,body').animate(
+            {
+                scrollTop: $("#" + div).offset().top
+            }, 2000);
+    }
+   </script>
+    <script src="bootstrap-4.6.2-dist/js/jquery-3.6.4.min.js"></script>
+    <script src="bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
