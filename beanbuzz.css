@@ -20,9 +20,11 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
+  background-attachment: fixed;
 }
 .gallery {
   background-image: url(devin-avery-9h5GDO6me70-unsplash.jpg);
+ 
 }
 .row .img img {
   height: 347px;
@@ -60,6 +62,8 @@ nav {
 {
 height: 307px;
 }
+
+
 }
 
 
@@ -68,22 +72,27 @@ height: 307px;
 {
   margin: auto;
 height: 307px;
-width: 70%;
+width: 80%;
 margin-top: 30px;
+}
+.abouts
+{
+  width: 90%;
 }
 }
 #about {
   background-image: url(nick-hillier-m6cRdOBdWWo-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 #visit {
   background-image: url(insung-yoon-bXfvPcBQyGc-unsplash.jpg);
-
+  background-attachment:unset;
   color: #dddddd;
   background-position: top;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
 }
 #coffee{
   background-image: url(nick-hillier-m6cRdOBdWWo-unsplash.jpg);
@@ -97,6 +106,8 @@ background-image: url(nordwood-themes-ivP3TYdLvw0-unsplash.jpg);
 width: 100%;
 background-size:cover;
 background-repeat: no-repeat;
+background-attachment: fixed;
+
 
 }
 #offers::after
@@ -117,10 +128,19 @@ background-repeat: no-repeat;
 .kafe-price
 {
   margin-left: 42px;
+  margin-top: 20px;
+}
+.kafe-price h3:hover
+{
+  text-decoration: underline;
 }
 nav ul li:hover
 {
   background-color: rgba(255, 170, 90, 0.634);
   border-radius: 6%;
   color: black;
+}
+.item-heading+p
+{
+  margin-bottom: 0px;
 }
