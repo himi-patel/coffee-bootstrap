@@ -22,6 +22,10 @@ nav {
   background-position: left;
   background-attachment: fixed;
 }
+.card
+{
+  padding:0px;
+}
 .gallery {
   background-image: url(devin-avery-9h5GDO6me70-unsplash.jpg);
  
